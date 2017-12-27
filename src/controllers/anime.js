@@ -8,7 +8,7 @@ const get = (req, res, next) => {
   });
   const {anime_par} = req.params;
   exports.get(req, res) =>{
-    res.render('about',{anime_par});
+    res.status(200).render('about',{anime_par});
   }
   next();
 }

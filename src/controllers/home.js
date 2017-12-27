@@ -7,6 +7,6 @@ const get = (req, res) => {
     else return data;
   });
   exports.get(req, res) =>{
-    res.render('home',{all_list});
+    res.status(200).render('home',{all_list});
   }
 }
