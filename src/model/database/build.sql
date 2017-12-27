@@ -1,0 +1,17 @@
+BEGIN;
+DROP TABLE IF EXISTS ANIMES CASCADE;
+CREATE TABLE animes(
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(50) NOT NULL,
+  overview VARCHAR(255) NOT NULL,
+  image VARCHAR(255) NOT NULL,
+  trailer VARCHAR(255) NOT NULL
+);
+COMMIT;
+
+INSERT INTO animes(title, overview, image, trailer)
+VALUES();
+
+
+
+COMMIT;

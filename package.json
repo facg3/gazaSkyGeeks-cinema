@@ -1,0 +1,28 @@
+{
+  "name": "gazaskygeeks-cinema",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facg3/gazaSkyGeeks-cinema.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facg3/gazaSkyGeeks-cinema/issues"
+  },
+  "homepage": "https://github.com/facg3/gazaSkyGeeks-cinema#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.3"
+  },
+  "dependencies": {
+    "pg": "^7.4.0"
+  }
+}
