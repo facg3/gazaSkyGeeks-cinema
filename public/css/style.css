@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+}
+header {
+	width: 100%;
+	overflow: hidden;
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+	z-index: 999;
+  padding: 15px 0;
+	background-color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+#home{
+  text-decoration: none;
+    color: #e54125;
+    font-size: 30px;
+    float: right;
+    padding-right: 20%;
+    padding-top: 21px;
+}
+
+header #logo {
+	display: inline-block;
+   margin: 0;
+   padding:0 7em;
+	float: left;
+}
+footer {
+	background-color: black;
+	text-align: center;
+  color: #e54125;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+/*.container{
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+}*/
+main{
+	overflow: hidden;
+	padding: 80px 30px
+}
+main .anime{
+	float: left;
+	width: 30%;
+	margin-left: 20px
+}
+main .anime img{
+	width: 300px;
+	height: 300px;
+	margin: 20px 0
+}
+.video{
+	overflow: hidden;
+
+}
+.desc , iframe{
+	width: 45%;
+	float: left;
+}
+.desc{
+padding: 30px 20px;
+font-size: 17px;
+}
+h2{
+	padding-bottom: 15px;
+	color: #e54125;
+}
