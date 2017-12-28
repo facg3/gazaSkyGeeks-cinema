@@ -6,8 +6,7 @@ exports.get = (req, res) => {
   viewAnimeList.anime(animeSpace, (err, item) => {
     if (err) console.log(err);
     else {
-      res.status(200).render('about', { item });
+      res.status(200).render('about', { item: item[0] });
     }
   });
-
 };
