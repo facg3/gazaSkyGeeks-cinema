@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "start": "node ./controllers/index.js",
+    "start": "node ./src/index.js",
     "start:watch": "nodemon ./src/index.js",
     "test:routes": "node ./tests/routes.test.js",
     "test:query": "node ./tests/db.test.js"
