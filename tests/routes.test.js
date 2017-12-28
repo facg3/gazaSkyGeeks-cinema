@@ -29,5 +29,3 @@ test('check the status code of anime route', (t) => {
       }
     });
 });
-
-// test.onFinish(() => process.exit(0));
