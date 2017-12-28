@@ -53,8 +53,7 @@ until one day when a new teacher named Haruko arrives at her school.
  Soon enough, Medical Mechanica is attacking her town and Hidomi discovers a secret within her that could save everyone,
 a secret that only Haruko can unlock.
 But why did Haruko return to Earth? What happened to her Rickenbacker 4001 she left with Naota? And where did the human-type robot (Canti) go?',
-'https://media.kitsu.io/anime/poster_images/11961/large.jpg?1499566031','');
-
+'https://media.kitsu.io/anime/poster_images/11961/large.jpg?1499566031','https://www.youtube.com/embed/5tYLzFxoW2Y');
 
 INSERT INTO animes(title, overview, image, trailer)
 VALUES('Fullmetal Alchemist: Brotherhood',

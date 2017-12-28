@@ -10,8 +10,8 @@ const allAnimes = (cb) => {
 const anime = (title, cb) => {
   const sql = {
     text: 'SELECT * FROM animes where title = $1',
-    values: [title]
-};
+    values: [title],
+  };
   db.query(sql, (err, res) => {
     if (err) cb(err);
     cb(null, res.rows);
