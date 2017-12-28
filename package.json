@@ -7,7 +7,10 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./controllers/index.js",
+    "start:watch": "nodemon ./src/index.js",
+    "test:routes": "node ./tests/routes.test.js",
+    "test:query": "node ./tests/db.test.js"
   },
   "repository": {
     "type": "git",
@@ -20,10 +23,19 @@
   },
   "homepage": "https://github.com/facg3/gazaSkyGeeks-cinema#readme",
   "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
     "nodemon": "^1.14.3",
+    "supertest": "^3.0.0",
     "tape": "^4.8.0"
   },
   "dependencies": {
-    "pg": "^7.4.0"
+    "body-parser": "^1.18.2",
+    "env2": "^2.2.0",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "pg": "^7.4.0",
+    "serve-favicon": "^2.4.5"
   }
 }
