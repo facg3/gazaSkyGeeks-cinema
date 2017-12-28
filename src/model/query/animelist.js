@@ -7,4 +7,14 @@ const allAnimes = (cb) => {
     cb(null, res.rows);
   });
 };
-module.exports = allAnimes;
+const anime = (title, cb) => {
+  const sql = {
+    text: 'SELECT * FROM animes where title = $1',
+    values: [title]
+};
+  db.query(sql, (err, res) => {
+    if (err) cb(err);
+    cb(null, res.rows);
+  });
+};
+module.exports = { allAnimes, anime };

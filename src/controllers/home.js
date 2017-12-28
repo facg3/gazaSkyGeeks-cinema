@@ -1,12 +1,14 @@
-const path = require('path');
-const view_animelist = require('../model/query/animelist.js');
+const viewAnimeList = require('../model/query/animelist.js');
 
-const get = (req, res) => {
-  const all_list = view_animelist.allAnimes((err, data) => {
-    if(err) console.log(err);
-    else return data;
+exports.get = (req, res) => {
+  viewAnimeList.allAnimes((err, data) => {
+    if (err) console.log(err);
+    else {
+      const newData = data.map((item) => {
+        item.titleTrim = item.title.replace(/ /g, '-');
+        return item;
+      });
+      res.status(200).render('home', { animes: newData });
+    }
   });
-  exports.get(req, res) =>{
-    res.status(200).render('home',{all_list});
-  }
-}
+};
